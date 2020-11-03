@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="media\JQuery.png">
+    <title>AtelierDevWeb</title>
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <style>
+  .ligne{
+  display: flex;
+  }
+  label{
+    width : 30%;
+  }
+  #formation{
+    overflow: scroll;
+    height: 70px;
+  }
+  </style>
+  <body>
+    <div class="ribbon">
+      <h3>INSCRIPTION</h3>
+      <br/>
+      <div class="form" style="background:pink ; background-position : cover;">
+        <form>
+          <br></br>
+          <div class="ligne">
+            <label>Nom et Prénom * :</label>
+            <input type="text" id="FullName" name="">
+          </div>
+          <br><br/>
+
+          <div class="ligne">
+            <label>CIN * :</label>
+            <input type="text" id="CIN" CIN="">
+          </div>
+          <br><br/>
+
+          <div class="ligne">
+            <label>Adresse e-mail * :</label>
+            <input type="text" id="Adresse" mail="">
+          </div>
+
+          <br><br/>
+          <label>Niveau :</label>
+          <br></br>
+          <input type="radio" id="NiveauCheck1" name="Niveau" value="Secondaire">
+          <label>Secondaire</label>
+
+          <input type="radio" id="NiveauCheck2" name="Niveau" value="Universitaire">
+          <label>Universitaire</label>
+
+          <input type="radio" id="NiveauCheck3" name="Niveau" value="Autre">
+          <label>Autre</label>
+          <br><br/>
+
+          <label>Modules de formation :</label>
+          <br></br>
+          <textarea id="formation" value=""></textarea>
+          <br><br/>
+          <p>(*)Champs obligatoires</p>
+          <div class="ligne">
+            <button type="submit" id="submit" value="Submit">Envoyer</button>
+            <button type="reset" id="reset" value="Reset">Annuler</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="main31.js"></script>
+  </body>
+</html>
